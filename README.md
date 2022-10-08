@@ -13,7 +13,8 @@ The basic steps are:
 3. Store your OBS credentials as an Actions Secret
 4. Upload/test/fix/improve
 
-Add 2: The tricky part is to push the changed files from Github to OBS. I use the following approach: 
+Add 2: The tricky part is to push the changed files from Github to OBS. I use the local runner as my local working area for that.
+
 	- creation an OBS credential file on the runner (see Settings -> Secrets -> Actions -> Repository Secret)
 	- checking out the package from OBS (here is where shell scripts become handy to keep the YAML files small and clean)
 	- copying over the changed files from the local clone of the repo (which is created automatically)
