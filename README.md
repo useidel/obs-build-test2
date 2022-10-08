@@ -7,17 +7,17 @@ The basic steps are:
 
 1. Create the (target) package at OBS
 2. Setup the Github Actions Workflow
-  - A YAML file in *.github/workflows/* is the minimum
-  - Additional shell scripts are not very unlikely
-  - You will need to reference your OBS credentials (see next point)
+   - A YAML file in *.github/workflows/* is the minimum
+   - Additional shell scripts are not very unlikely
+   - You will need to reference your OBS credentials (see next point)
 3. Store your OBS credentials as an Actions Secret
 4. Upload/test/fix/improve
 
 Add 2: The tricky part is to push the changed files from Github to OBS. I use the following approach: 
-- creation an OBS credential file on the runner
-- checking out the package from OBS
-- copying over the changed files from the local clone of the repo (which is created automatically)
-- checkin in the changed files to the package directory at OBS (which will trigger the rebuild over there)
+       - creation an OBS credential file on the runner (see Settings -> Secrets -> Actions -> Repository Secret)
+       - checking out the package from OBS (here is where shell scripts become handy to keep the YAML files small and clean)
+       - copying over the changed files from the local clone of the repo (which is created automatically)
+       - checkin in the changed files to the package directory at OBS (which will trigger the rebuild over there)
 
 For detailed information about these steps please refer to the corresponding documention on OBS and Github, respectively. Here are the links for this particular setup
 
