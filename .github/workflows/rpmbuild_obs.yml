@@ -1,7 +1,7 @@
 # This is workflow to build rpms using the SPEC file
 # The Copr build service is used
 
-name: rpmbuild_copr_obs
+name: rpmbuild_obs
 
 # Controls when the workflow will run
 on:

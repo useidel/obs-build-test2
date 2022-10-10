@@ -22,7 +22,7 @@ Add 2: The tricky part is to push the changed files from Github to OBS. I use th
 
 For detailed information about these steps please refer to the corresponding documention on OBS and Github, respectively. Here are the links for this particular setup
 
-1. [OBS package test](https://build.opensuse.org/package/show/home:useidel/test)
+1. [OBS package dummy](https://build.opensuse.org/package/show/home:useidel/dummy)
 2. [Github Action Workflow](https://github.com/useidel/obs-build-test2/actions/workflows/rpmbuild_obs.yml)
 3. [Github Action Secret](https://github.com/useidel/obs-build-test2/settings/secrets/actions)
 
