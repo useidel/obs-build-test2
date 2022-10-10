@@ -16,7 +16,7 @@ cp ../*spec dummy/
 cp ../*.tar.gz dummy/
 
 # mark files for update if there are new ones
-#cd test
+#cd dummy
 #osc add *spec
 #cd ..
 
