@@ -23,6 +23,6 @@ echo $MYDATE > dummy/foobar.txt
 #osc add *spec
 #cd ..
 
-# upload changed content
+# upload changed content with the original git commit message
 osc ci -m "$MY_GITHUB_COMMIT_MSG: $MYDATE" dummy
 
